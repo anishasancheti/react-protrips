@@ -2,7 +2,7 @@
 import './App.css';
 import React, { Component } from 'react'
 import Header from './components/Header';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import Home from './components/Home';
 import AddTrip from './components/AddTrip';
 import Display from './components/Display';
@@ -12,10 +12,10 @@ export default class App extends Component {
     super();
     this.state = {
       trips: [
-        { date: "2017-01-10", place: "Manali", type: "trek" },
-        { date: "2017-04-05", place: "Mumbai", type: "club" },
-        { date: "2017-02-09", place: "Marina", type: "tropic" },
-        { date: "2020-10-21", place: "Coimbatore", type: "trek" }
+        { date: "2017-04-10", place: "Manali", type: "trek" },
+        { date: "2022-05-07", place: "Mumbai", type: "club" },
+        { date: "2021-08-09", place: "Goa", type: "tropic" },
+        { date: "2020-10-21", place: "Darjeeling", type: "trek" }
       ]
     }
   }
@@ -27,16 +27,14 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <Router>
           <Header />
           <div className="workplace">
             <Routes>
-              <Route exact path="/"><Home trips={this.state.trips} /></Route>
-              <Route path="/addTrip"><AddTrip addTrip={this.addTrip} trips={this.state.trips} /></Route>
-              <Route path="/display"><Display trips={this.state.trips} /></Route>
+              <Route exact path="/" element={<Home trips={this.state.trips} />} />
+              <Route path="/addTrip" element={<AddTrip addTrip={this.addTrip} trips={this.state.trips} />} />
+              <Route path="/display" element={<Display trips={this.state.trips} />} />
             </Routes>
           </div>
-        </Router>
       </>
     );
   }
