@@ -1,86 +1,70 @@
-![Image description](https://i1.faceprep.in/ProGrad/prograd-logo.png)
+# Getting Started with Create React App
 
-# ProGrad Lab | REACT - PROBIBO
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Learning Goals
+## Available Scripts
 
-In this exercise, the goal is to learn routing and forms in react:
+In the project directory, you can run:
 
-- routing,
-- forms
+### `npm start`
 
-## Getting started
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-1. Fork this repo
-2. Clone this repo
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Whenever you create a first significant change, you should make your first commit.
+### `npm test`
 
-3. Follow these [guidelines to add, commit and push changes](https://github.com/FACEPrep-ProGrad/general-guidelines-labs-project-builders.git).
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-In the end of this document, you will find guidelines on how to submit the exercise.
+### `npm run build`
 
-## Instructions
-In this lab we will try to work with routing in react and also try to use basic forms. The main idea of this lab is to store down the trip details of the form and display it. We have three components 
-- HomeComponent
-- AddTripComponent
-- ListComponent
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Path to Components
-- / -> HomeComponent
-- /add -> AddComponent
-- /list -> ListComponent
-s3://facenow/l5-homecomponent.png
-The entire application looks like this
-![Screenshot](https://i1.faceprep.in/ProGrad/l5-homecomponent.png)
-![Screenshot](https://i1.faceprep.in/ProGrad/l5-tripcomponent.png)
-![Screenshot](https://i1.faceprep.in/ProGrad/l5-listcomponent.png)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### PROGRESSION 1 | CREATE A HOME COMPONENT
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Create a home component and design it as per the screenshot shown below. The home button should display the home component and and also the total trips.
+### `npm run eject`
 
-![Screenshot](https://i1.faceprep.in/ProGrad/l5-homecomponent.png)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### PROGRESSION 2 | TRIP TIME
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-When you click the add trip button, You should display a form with with the following fields
-- date
-- place
-- type
-    - trek
-    - tropic
-    - club
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-The data can be stored in an array
-![Screenshot](https://i1.faceprep.in/ProGrad/l5-tripcomponent.png)
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### PROGRESSION 3 | BUCKET LIST
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Render the list of all the places with time and date
+### Code Splitting
 
-![Screenshot](https://i1.faceprep.in/ProGrad/l5-listcomponent.png)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Bonus | TREKS TROPICS & CLUBS
+### Analyzing the Bundle Size
 
-Based on the selection filter out the particular type of trips.
-![Screenshot](https://i1.faceprep.in/ProGrad/l5-clubfilter.png)
-![Screenshot](https://i1.faceprep.in/ProGrad/l5-trekfilter.png)
-![Screenshot](https://i1.faceprep.in/ProGrad/l5-tropicfilter.png)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## Submission
+### Making a Progressive Web App
 
-If you didn't add, commit and push the changes you made, this is the last call. :smile:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-please share your github links with your Mentors. Your Mentor's will check up your work and provide feedback. 
+### Advanced Configuration
 
-## Summary
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-If you managed to do it, good job! :trophy:
+### Deployment
 
-We are proud of you!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Happy Coding ProGrad ❤️!
+### `npm run build` fails to minify
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
